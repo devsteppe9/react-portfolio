@@ -5,6 +5,12 @@ import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons'
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
+// Import certification logos
+import awsLogo from '../assets/logos/aws.jpeg';
+import linuxFoundationLogo from '../assets/logos/linux-foundation.jpeg';
+import scrumLogo from '../assets/logos/scrum.jpeg';
+import japanFoundationLogo from '../assets/logos/japan-foundation.jpeg';
+
 const labelsFirst = [
     "React",
     "TypeScript",
@@ -43,48 +49,25 @@ const labelsThird = [
 
 function Expertise() {
     return (
-    <div className="container" id="expertise">
-        <div className="skills-container">
-            <h1>Expertise</h1>
-            <div className="skills-grid">
-                <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsFirst.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
-
-                <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsSecond.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
-
-                <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsThird.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
+        <div className="container" id="expertise">
+            <div className="skills-container">
+                <h1>Expertise</h1>
+                <p>
+                    I am a DevOps Engineer with 7+ years of experience in software development and infrastructure automation, holding AWS DevOps Professional and Kubernetes CKAD certifications. My expertise lies in designing, deploying, and maintaining AWS-based infrastructures, automating CI/CD pipelines, and optimizing cloud-based deployments using Kubernetes and AWS CDK. I have a strong background in Docker, Jenkins, GitHub Actions, and AWS services (ECS, Lambda, Batch, EC2, IAM). Passionate about cloud-native development, infrastructure as code (IaC), and system reliability, I continuously explore emerging technologies and best practices.
+                </p>
+                <div className="certifications-container">
+                    <h2>Certifications</h2>
+                    <div className="certifications-grid">
+                        <img className="certification-img" src="https://images.credly.com/size/680x680/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="AWS Certification" />
+                        <img className="certification-img" src="https://images.credly.com/size/680x680/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png" alt="Linux Foundation Certification" />
+                        <img className="certification-img" src="https://images.credly.com/size/680x680/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png" alt="Scrum Certification" />
+                        <img className="certification-img" src="https://images.credly.com/images/bd31ef42-d460-493e-8503-39592aaf0458/image.png" alt="Devops" />
+                        <img className="certification-img" src="https://images.credly.com/size/680x680/images/cc8adc83-1dc6-4d57-8e20-22171247e052/blob" alt="Japan Foundation Certification" />
+                        <img className="certification-img" src="https://images.credly.com/size/680x680/images/a2790314-008a-4c3d-9553-f5e84eb359ba/image.png" alt="Scrum master" />
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     );
 }
 

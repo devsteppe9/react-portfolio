@@ -17,8 +17,8 @@ function Main() {
             <a href="https://github.com/devsteppe9" target="_blank" rel="noreferrer noopener" title="GitHub Profile"><GitHubIcon /></a>
             <a href="https://www.linkedin.com/in/jarkynbyek-japar-83575712a/" target="_blank" rel="noreferrer noopener" title="LinkedIn Profile"><LinkedInIcon /></a>
           </div>
-          <h1>Jarkynbyek (Jack) Japar</h1>
-          <p>DevOps & Sotfware Engineer</p>
+          <h1>Jack Japar</h1>
+          <p>Cloud-Native Software Engineer</p>
 
           <div className="mobile_social_icons">
             <a href="https://github.com/devsteppe9" target="_blank" rel="noreferrer noopener" title="GitHub Profile"><GitHubIcon /></a>
